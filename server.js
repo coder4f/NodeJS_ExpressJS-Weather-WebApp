@@ -28,6 +28,7 @@ app.post("/", function(req, res){
             res.write("<p>The weather is currently " + description + ".</p>")
             res.write("<h1>The temperature in " + query + " is " + temp + " degrees Celcius.</h1>");
             res.write("<img src=" + condition + ">");
+            res.send();
         });
     });
 });
